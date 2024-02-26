@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WidthHeight.All.BothMatchParent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_topParent"
+        style="@style/Guideline.Main.TopParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_bottomParent"
+        style="@style/Guideline.Main.BottomParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_startParent"
+        style="@style/Guideline.Home.StartParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_endParent"
+        style="@style/Guideline.Home.EndParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_topBeginning"
+        style="@style/Guideline.Home.TopBeginning" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_bottomBeginning"
+        style="@style/Guideline.Home.BottomBeginning" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_topDestination"
+        style="@style/Guideline.Home.TopDestination" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_bottomDestination"
+        style="@style/Guideline.Home.BottomDestination" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_topDistanceCalculate"
+        style="@style/Guideline.Home.TopDistanceCalculate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_bottomDistanceCalculate"
+        style="@style/Guideline.Home.BottomDistanceCalculate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_endDistanceCalculate"
+        style="@style/Guideline.Home.EndDistanceCalculate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_startDistanceCalculate"
+        style="@style/Guideline.Home.StartDistanceCalculate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_topDistanceShow"
+        style="@style/Guideline.Home.TopDistanceShow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home_bottomDistanceShow"
+        style="@style/Guideline.Home.BottomDistanceShow" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_home_beginning"
+        style="@style/TextInputLayout.Home.Beginning">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_home_beginning"
+            style="@style/TextInputEditText.Home.Beginning"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_home_destination"
+        style="@style/TextInputLayout.Home.Destination">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_home_destination"
+            style="@style/TextInputEditText.Home.Destination" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_home_distanceCalculate"
+        style="@style/Button.Home.DistanceCalculate" />
+
+    <TextView
+        android:id="@+id/textView_home_distanceShow"
+        style="@style/TextView.Home.DistanceShow" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_home_distanceShow"
+        style="@style/ProgressBar.Home.DistanceShow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

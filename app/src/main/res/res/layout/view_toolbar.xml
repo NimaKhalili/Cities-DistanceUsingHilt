@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ConstraintLayout.ViewToolbar"
+    tools:background="?colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageView_viewToolbar_backButton"
+        style="@style/ImageView.ViewToolbar.BackButton" />
+
+
+    <TextView
+        android:id="@+id/textView_viewToolbar_title"
+        style="@style/TextView.ViewToolbar.Title"
+        tools:text="صفحه اول" />
+</androidx.constraintlayout.widget.ConstraintLayout>

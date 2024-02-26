@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ConstraintLayout.ItemDistance">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_itemDistance_topParent"
+        style="@style/Guideline.ItemDistance.TopParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_itemDistance_bottomParent"
+        style="@style/Guideline.ItemDistance.BottomParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_itemDistance_startParent"
+        style="@style/Guideline.ItemDistance.StartParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_itemDistance_endParent"
+        style="@style/Guideline.ItemDistance.EndParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_itemDistance_destinationItemsRightSide"
+        style="@style/Guideline.ItemDistance.DestinationItemsRightSide"
+         />
+
+    <TextView
+        android:id="@+id/textView_itemDistance_beginningText"
+        style="@style/TextView.ItemDistance.BeginningText" />
+
+    <TextView
+        android:id="@+id/textView_itemDistance_beginning"
+        style="@style/TextView.ItemDistance.Beginning"
+        tools:text="آذربایجان غربی" />
+
+    <TextView
+        android:id="@+id/textView_itemDistance_destinationText"
+        style="@style/TextView.ItemDistance.DestinationText" />
+
+    <TextView
+        android:id="@+id/textView_itemDistance_destination"
+        style="@style/TextView.ItemDistance.Destination"
+        tools:text="آذربایجان غربی" />
+
+    <TextView
+        android:id="@+id/textView_itemDistance_distance"
+        style="@style/TextView.ItemDistance.Distance"
+        tools:text="795 کیلومتر" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

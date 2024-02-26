@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WidthHeight.All.BothMatchParent"
+    tools:context=".feature.main.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_main"
+        style="@style/AppBarLayout.Main">
+
+        <com.example.view.BaseToolbar
+            android:id="@+id/toolbar_main"
+            style="@style/Toolbar.Main" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer_main"
+        style="@style/FragmentContainer.Main"
+        tools:layout="@layout/fragment_home" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_main_topFragmentContainer"
+        style="@style/Guideline.Main.TopFragmentContainer" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_main_bottomNavigationView"
+        style="@style/Guideline.Main.BottomNavigationView" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView_main"
+        style="@style/BottomNavigationView.Main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

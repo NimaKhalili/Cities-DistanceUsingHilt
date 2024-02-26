@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout_viewDistanceEmptyState_rootView"
+    style="@style/WidthHeight.All.BothMatchParent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_viewDistanceEmptyState_topViewDistanceEmptyState"
+        style="@style/Guideline.ViewDistanceEmptyState.TopViewDistanceEmptyState" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_viewDistanceEmptyState_bottomViewDistanceEmptyState"
+        style="@style/Guideline.ViewDistanceEmptyState.BottomViewDistanceEmptyState" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_viewDistanceEmptyState_endViewDistanceEmptyStateBackToHome"
+        style="@style/Guideline.ViewDistanceEmptyState.EndViewDistanceEmptyStateBackToHome" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_viewDistanceEmptyState_startViewDistanceEmptyStateBackToHome"
+        style="@style/Guideline.ViewDistanceEmptyState.StartViewDistanceEmptyStateBackToHome" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_viewDistanceEmptyState_topViewDistanceEmptyStateBackToHome"
+        style="@style/Guideline.ViewDistanceEmptyState.TopViewDistanceEmptyStateBackToHome" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_viewDistanceEmptyState_bottomViewDistanceEmptyStateBackToHome"
+        style="@style/Guideline.ViewDistanceEmptyState.BottomViewDistanceEmptyStateBackToHome" />
+
+    <TextView
+        android:id="@+id/textView_viewDistanceEmptyState"
+        style="@style/TextView.ViewDistanceEmptyState"
+        tools:text="@string/distance_default_empty_state" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_viewDistanceEmptyState_backToHome"
+        style="@style/Button.ViewDistanceEmptyState.BackToHome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

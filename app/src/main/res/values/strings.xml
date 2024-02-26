@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">مسافت بین شهرها</string>
+    <string name="unknown_error">خطای نامشخص</string>
+    <string name="unknown_server_error">خطای نامشخص سرور</string>
+    <string name="distance_default_empty_state">مسافتی ثبت نشده است</string>
+    <string name="distance_finished_empty_state">تمام مسافت ها پاک شده اند</string>
+
+    <string-array name="citiesList">
+        <item>اراک</item>
+        <item>اردبیل</item>
+        <item>ارومیه</item>
+        <item>اصفهان</item>
+        <item>اهواز</item>
+        <item>ایرانشهر</item>
+        <item>ایلام</item>
+        <item>بابل</item>
+        <item>بجنورد</item>
+        <item>بندر انزلی</item>
+        <item>بندر بوشهر</item>
+        <item>بندر عباس</item>
+        <item>بیرجند</item>
+        <item>تبریز</item>
+        <item>تهران</item>
+        <item>چابهار</item>
+        <item>خرمشهر</item>
+        <item>رشت</item>
+        <item>زاهدان</item>
+        <item>زنجان</item>
+        <item>ساری</item>
+        <item>سمنان</item>
+        <item>سنندج</item>
+        <item>شاهرود</item>
+        <item>شهرکرد</item>
+        <item>شیراز</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کاشان</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>گرگان</item>
+        <item>مشهد</item>
+        <item>همدان</item>
+        <item>یاسوج</item>
+        <item>یزد</item>
+    </string-array>
+</resources>

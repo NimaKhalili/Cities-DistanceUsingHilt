@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/distance_List"
+    app:startDestination="@id/distanceListFragment">
+
+    <fragment
+        android:id="@+id/distanceListFragment"
+        android:name="com.example.citiesdistance.feature.distance.DistanceFragment"
+        android:label="DistanceListFragment" />
+</navigation>

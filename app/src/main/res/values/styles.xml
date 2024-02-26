@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //---------------------->all
+    <style name="WidthHeight.All.BothMatchParent" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WidthHeight.All.BothWrapContent" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthHeight.All.MatchParentWrapContent" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthHeight.All.BothZero" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="WidthHeight.All.MatchParentActionBarSize" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+    </style>
+
+    <style name="Guideline.All.Horizontal" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Guideline.All.Vertical" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    //---------------------->default
+    <style name="BaseTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="startIconDrawable">@drawable/ic_expand_more</item>
+    </style>
+
+    <style name="BaseBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/ActiveItemBottomNavigationTextAppearance</item>
+        <item name="itemIconSize">@dimen/itemIconSize_BaseBottomNavigationView</item>
+        <item name="itemPaddingBottom">@dimen/itemPaddingBottom_BaseBottomNavigationView</item>
+    </style>
+    
+    <style name="ActiveItemBottomNavigationTextAppearance" parent="TextAppearance.MyTheme.Caption">
+        <item name="fontFamily">@font/primary_extra_bold</item>
+        <item name="android:fontFamily">@font/primary_extra_bold</item>
+    </style>
+
+    //---------------------->activity_main.xml
+    <style name="Guideline.Main.TopParent" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.04</item>
+    </style>
+
+    <style name="Guideline.Main.BottomParent" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.96</item>
+    </style>
+
+    <style name="Guideline.Main.BottomNavigationView" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.91</item>
+    </style>
+
+    <style name="Guideline.Main.TopFragmentContainer" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.08</item>
+    </style>
+
+    <style name="FragmentContainer.Main" parent="WidthHeight.All.BothZero">
+        <item name="android:name">androidx.navigation.fragment.NavHostFragment</item>
+        <item name="defaultNavHost">true</item>
+        <item name="navGraph">@navigation/nav_graph</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_main_bottomNavigationView</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_main_topFragmentContainer</item>
+    </style>
+
+    <style name="AppBarLayout.Main" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="Toolbar.Main" parent="WidthHeight.All.MatchParentWrapContent">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="bs_title">صسافت بین شهرها</item>
+        <item name="bs_backButtonVisibility">gone</item>
+    </style>
+
+    <style name="BottomNavigationView.Main" parent="WidthHeight.All.BothZero">
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_main_bottomNavigationView</item>
+        <item name="menu">@menu/main_navigation</item>
+    </style>
+
+    //---------------------->fragment_home.xml
+    <style name="Guideline.Home.StartParent" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.08</item>
+    </style>
+
+    <style name="Guideline.Home.EndParent" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.92</item>
+    </style>
+
+    <style name="Guideline.Home.TopBeginning" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.07</item>
+    </style>
+
+    <style name="Guideline.Home.BottomBeginning" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.16</item>
+    </style>
+
+    <style name="Guideline.Home.TopDestination" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.21</item>
+    </style>
+
+    <style name="Guideline.Home.BottomDestination" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.30</item>
+    </style>
+
+    <style name="Guideline.Home.TopDistanceCalculate" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.39</item>
+    </style>
+
+    <style name="Guideline.Home.BottomDistanceCalculate" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.49</item>
+    </style>
+
+    <style name="Guideline.Home.StartDistanceCalculate" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.30</item>
+    </style>
+
+    <style name="Guideline.Home.EndDistanceCalculate" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.70</item>
+    </style>
+
+    <style name="Guideline.Home.TopDistanceShow" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.57</item>
+    </style>
+
+    <style name="Guideline.Home.BottomDistanceShow" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.64</item>
+    </style>
+
+    <style name="TextInputLayout.Home.All" parent="WidthHeight.All.BothZero">
+        <item name="layout_constraintStart_toStartOf">@id/guideline_home_startParent</item>
+        <item name="layout_constraintEnd_toEndOf">@id/guideline_home_endParent</item>
+    </style>
+
+    <style name="TextInputLayout.Home.Beginning" parent="TextInputLayout.Home.All">
+        <item name="layout_constraintTop_toTopOf">@id/guideline_home_topBeginning</item>
+        <item name="layout_constraintBottom_toBottomOf">@id/guideline_home_bottomBeginning</item>
+    </style>
+
+    <style name="TextInputLayout.Home.Destination" parent="TextInputLayout.Home.All">
+        <item name="layout_constraintTop_toTopOf">@id/guideline_home_topDestination</item>
+        <item name="layout_constraintBottom_toBottomOf">@id/guideline_home_bottomDestination</item>
+    </style>
+
+    <style name="TextInputEditText.Home.All" parent="WidthHeight.All.BothMatchParent">
+        <item name="android:textAppearance">?textAppearanceHeadline1</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:inputType">none</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="TextInputEditText.Home.Beginning" parent="TextInputEditText.Home.All">
+        <item name="android:hint">مبدأ</item>
+    </style>
+
+    <style name="TextInputEditText.Home.Destination" parent="TextInputEditText.Home.All">
+        <item name="android:hint">مقصد</item>
+    </style>
+
+    <style name="Button.Home.DistanceCalculate" parent="WidthHeight.All.BothZero">
+        <item name="android:text">محاسبه مسافت</item>
+        <item name="android:textAppearance">?textAppearanceHeadline1</item>
+        <item name="layout_constraintStart_toStartOf">@id/guideline_home_startDistanceCalculate</item>
+        <item name="layout_constraintEnd_toEndOf">@id/guideline_home_endDistanceCalculate</item>
+        <item name="layout_constraintTop_toTopOf">@id/guideline_home_topDistanceCalculate</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_home_bottomDistanceCalculate</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="TextView.Home.DistanceShow" parent="WidthHeight.All.BothZero">
+        <item name="android:textAppearance">?textAppearanceHeadline5</item>
+        <item name="layout_constraintStart_toStartOf">@id/guideline_home_startParent</item>
+        <item name="layout_constraintEnd_toEndOf">@id/guideline_home_endParent</item>
+        <item name="layout_constraintTop_toTopOf">@id/guideline_home_topDistanceShow</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_home_bottomDistanceShow</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ProgressBar.Home.DistanceShow" parent="WidthHeight.All.BothZero">
+        <item name="layout_constraintStart_toStartOf">@id/guideline_home_startParent</item>
+        <item name="layout_constraintEnd_toEndOf">@id/guideline_home_endParent</item>
+        <item name="layout_constraintTop_toTopOf">@id/guideline_home_topDistanceShow</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_home_bottomDistanceShow</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    //---------------------->fragment_distance.xml
+    <style name="Guideline.Distance.TopParent" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.02</item>
+    </style>
+
+    <style name="Guideline.Distance.BottomParent" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.98</item>
+    </style>
+
+    <style name="Guideline.Distance.StartParent" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.03</item>
+    </style>
+
+    <style name="Guideline.Distance.EndParent" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.97</item>
+    </style>
+
+    <style name="RecyclerView.Distance" parent="WidthHeight.All.BothZero">
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_distance_bottomParent</item>
+        <item name="layout_constraintEnd_toEndOf">@+id/guideline_distance_endParent</item>
+        <item name="layout_constraintStart_toStartOf">@+id/guideline_distance_startParent</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_distance_topParent</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    //---------------------->item_distance.xml
+    <style name="Guideline.ItemDistance.TopParent" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.04</item>
+    </style>
+
+    <style name="Guideline.ItemDistance.BottomParent" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.88</item>
+    </style>
+
+    <style name="Guideline.ItemDistance.StartParent" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.03</item>
+    </style>
+
+    <style name="Guideline.ItemDistance.EndParent" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.97</item>
+    </style>
+
+    <style name="Guideline.ItemDistance.DestinationItemsRightSide" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.58</item>
+    </style>
+
+    <style name="TextView.ItemDistance.AllText" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+    </style>
+
+    <style name="TextView.ItemDistance.BeginningText" parent="TextView.ItemDistance.AllText">
+        <item name="layout_constraintEnd_toEndOf">@+id/guideline_itemDistance_endParent</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_itemDistance_topParent</item>
+        <item name="android:text">مبدا</item>
+    </style>
+
+    <style name="TextView.ItemDistance.DestinationText" parent="TextView.ItemDistance.AllText">
+        <item name="layout_constraintEnd_toEndOf">@id/guideline_itemDistance_destinationItemsRightSide</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_itemDistance_topParent</item>
+        <item name="android:text">مقصد</item>
+    </style>
+
+    <style name="TextView.ItemDistance.All" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+    </style>
+
+    <style name="TextView.ItemDistance.Beginning" parent="TextView.ItemDistance.All">
+        <item name="layout_constraintEnd_toEndOf">@+id/guideline_itemDistance_endParent</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/textView_itemDistance_beginningText</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_itemDistance_bottomParent</item>
+    </style>
+
+    <style name="TextView.ItemDistance.Destination" parent="TextView.ItemDistance.All">
+        <item name="layout_constraintEnd_toEndOf">@id/guideline_itemDistance_destinationItemsRightSide</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/textView_itemDistance_destinationText</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_itemDistance_bottomParent</item>
+    </style>
+
+    <style name="TextView.ItemDistance.Distance" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="layout_constraintStart_toStartOf">@+id/guideline_itemDistance_startParent</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_itemDistance_bottomParent</item>
+    </style>
+
+    <style name="ConstraintLayout.ItemDistance" parent="WidthHeight.All.MatchParentWrapContent">
+        <item name="android:background">@drawable/background_item_distance</item>
+    </style>
+
+    //---------------------->view_loading.xml
+    <style name="FrameLayout.ViewLoading" parent="WidthHeight.All.BothMatchParent">
+        <item name="android:background">?android:colorBackground</item>
+    </style>
+
+    <style name="ProgressBar.ViewLoading" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    //---------------------->view_toolbar.xml
+    <style name="ConstraintLayout.ViewToolbar" parent="WidthHeight.All.MatchParentActionBarSize">
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+
+    <style name="ImageView.ViewToolbar.BackButton" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_gravity">center_vertical|start</item>
+        <item name="android:layout_marginEnd">@dimen/marginEndImageView_viewToolbar_backButton</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="srcCompat">@drawable/ic_back</item>
+        <item name="tint">?colorOnPrimary</item>
+    </style>
+
+    <style name="TextView.ViewToolbar.Title" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:layout_marginBottom">@dimen/marginBottomTextView_viewToolbar_title</item>
+        <item name="android:layout_gravity">center_vertical|start</item>
+        <item name="android:layout_marginEnd">@dimen/marginEndTextView_viewToolbar_title</item>
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintEnd_toStartOf">@+id/imageView_viewToolbar_backButton</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    //---------------------->view_distance_empty_state.xml
+    <style name="Guideline.ViewDistanceEmptyState.TopViewDistanceEmptyState" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.39</item>
+    </style>
+
+    <style name="Guideline.ViewDistanceEmptyState.BottomViewDistanceEmptyState" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.49</item>
+    </style>
+
+    <style name="Guideline.ViewDistanceEmptyState.StartViewDistanceEmptyStateBackToHome" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.30</item>
+    </style>
+
+    <style name="Guideline.ViewDistanceEmptyState.EndViewDistanceEmptyStateBackToHome" parent="Guideline.All.Vertical">
+        <item name="layout_constraintGuide_percent">0.70</item>
+    </style>
+
+    <style name="Guideline.ViewDistanceEmptyState.TopViewDistanceEmptyStateBackToHome" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.54</item>
+    </style>
+
+    <style name="Guideline.ViewDistanceEmptyState.BottomViewDistanceEmptyStateBackToHome" parent="Guideline.All.Horizontal">
+        <item name="layout_constraintGuide_percent">0.61</item>
+    </style>
+
+    <style name="TextView.ViewDistanceEmptyState" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:textAppearance">?textAppearanceHeadline5</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_viewDistanceEmptyState_topViewDistanceEmptyState</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/guideline_viewDistanceEmptyState_bottomViewDistanceEmptyState</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="Button.ViewDistanceEmptyState.BackToHome" parent="WidthHeight.All.BothWrapContent">
+        <item name="android:textAppearance">?textAppearanceHeadline1</item>
+        <item name="android:text">ثبت مسافت</item>
+        <item name="layout_constraintTop_toTopOf">@+id/guideline_viewDistanceEmptyState_topViewDistanceEmptyStateBackToHome</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/guideline_viewDistanceEmptyState_bottomViewDistanceEmptyStateBackToHome</item>
+        <item name="layout_constraintStart_toStartOf">@+id/guideline_viewDistanceEmptyState_startViewDistanceEmptyStateBackToHome</item>
+        <item name="layout_constraintEnd_toEndOf">@+id/guideline_viewDistanceEmptyState_endViewDistanceEmptyStateBackToHome</item>
+    </style>
+</resources>

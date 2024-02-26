@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //---------------------->default
+    <dimen name="itemIconSize_BaseBottomNavigationView">52dp</dimen>
+    <dimen name="itemPaddingBottom_BaseBottomNavigationView">18dp</dimen>
+
+    //---------------------->type.xml
+    <dimen name="textSizeTextAppearance_myTheme_headline1">31sp</dimen>
+    <dimen name="textSizeTextAppearance_myTheme_caption">27sp</dimen>
+    <dimen name="textSizeTextAppearance_myTheme_headline5">30sp</dimen>
+    <dimen name="textSizeTextAppearance_myTheme_headline6">24sp</dimen>
+    <dimen name="textSizeTextAppearance_myTheme_body1">20sp</dimen>
+    <dimen name="textSizeTextAppearance_myTheme_body2">18sp</dimen>
+
+    //---------------------->ic_expand_more.xml
+    <dimen name="height_icExpandMore">44dp</dimen>
+    <dimen name="width_icExpandMore">44dp</dimen>
+
+    //---------------------->ic_back.xml
+    <dimen name="height_icBack">44dp</dimen>
+    <dimen name="width_icBack">44dp</dimen>
+
+    //---------------------->view_toolbar.xml
+    <dimen name="marginEndImageView_viewToolbar_backButton">8dp</dimen>
+    <dimen name="marginBottomTextView_viewToolbar_title">5dp</dimen>
+    <dimen name="marginEndTextView_viewToolbar_title">16dp</dimen>
+
+</resources>

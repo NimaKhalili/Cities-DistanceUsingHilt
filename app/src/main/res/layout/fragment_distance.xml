@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WidthHeight.All.BothMatchParent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_distance_topParent"
+        style="@style/Guideline.Distance.TopParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_distance_bottomParent"
+        style="@style/Guideline.Distance.BottomParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_distance_startParent"
+        style="@style/Guideline.Distance.StartParent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_distance_endParent"
+        style="@style/Guideline.Distance.EndParent" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_distance"
+        style="@style/WidthHeight.All.BothMatchParent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_distance"
+            style="@style/RecyclerView.Distance" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
